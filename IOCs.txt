@@ -1,0 +1,24 @@
+Incident: SOC168 - Whoami Command Detected in Request Body
+Date: Feb 28, 2022
+Affected Host: WebServer1004 (172.16.17.16)
+
+Source Attacker IP: 61.177.172.87
+Malicious URL: https://172.16.17.16/video/
+
+Commands Executed:
+
+ls
+
+whoami
+
+uname
+(All executed as root)
+
+Suspicious Outbound Destinations:
+
+54.242.165.36
+
+198.54.117.250
+
+Classification: Command Injection / Remote Code Execution
+Severity: High
